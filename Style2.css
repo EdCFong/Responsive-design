@@ -1,0 +1,32 @@
+div
+{
+    border: 1px dached red;
+}
+#containerHeader
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#logo h2{
+    font-family: 'Lora';
+    color: #143774;
+    font-size: 3.375rem;
+}
+#logo h3{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: #1792D2;
+    font-size: 1rem;
+}
+
+a{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: #707070;
+    font-size: 1rem;
+    
+}

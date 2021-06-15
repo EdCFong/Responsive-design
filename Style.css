@@ -38,13 +38,6 @@ p{
     justify-content: space-between; 
 }
 
-@media (max-width:600px)
-{
-    .columns
-    {
-          flex-direction: column;
-    }
-}
 
 img {
   width: 100%;
@@ -70,6 +63,10 @@ img {
 
 @media (max-width:600px)
 {
+    .columns
+    {
+          flex-direction: column;
+    }
     .col-1,
     .col-2,
     .col-3 {
