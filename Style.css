@@ -1,75 +1,107 @@
 body {
-    font-size: 1.125rem;
-    color: #707070;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* ====================
+Typography
+======================*/
+
+h1{
+    font-family: 'Lora', serif;
+    color: #143774;
+    font-size: 2rem;
+    font-weight: 400;
     margin: 0;
 }
 
-/* Typography */
-
-h1 {
-    font-size: 3rem;
-    color: #212614;
-    text-align: center;
+.subtitle{
+    font-weight: 700;
+    color: #1792D2;
+    font-size: .75rem;
+    margin: 0;
 }
 
-h1 span {
-    color: #b7832f;
-}
+/* ====================
+Layout
+======================*/
 
-h2 {
-    font-size: 1.5rem;
-}
-
-p{
-    margin-top: 0;
-}
-
-/* Layout */
-
-.container {
-    width: 95%;
-    max-width: 980px;
+.container
+{
+    width: 90%;
+    max-width: 900px;
     margin: 0 auto;
 }
 
-.columns {
-    display: flex;
-    margin: 1em 0;
-    justify-content: space-between; 
-}
-
-
-img {
-  width: 100%;
-}
-
-.col-bg {
-    background: #212614;
-    color:#ffff;
-    padding: 1em;
-}
-
-.col-1 {
-     width: 20%;
-}
-
-.col-2 {
-    width: 45%;
-}
-
-.col-3 {
-  width: 70%;
-}
-
-@media (max-width:600px)
+.container-nav
 {
-    .columns
-    {
-          flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+}
+
+/* Navegation */
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    font-weight: 700;
+    color: #707070;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+color: #1792d2;
+}
+ 
+.current-page {
+ border-bottom: 1px solid #707070;
+}
+
+.current-page:hover{
+    color: #707070;
+}
+
+
+
+.site-title
+{
+    
+    
+}
+
+@media (max-width: 675px) {
+    .container-nav{
+        flex-direction: column;
     }
-    .col-1,
-    .col-2,
-    .col-3 {
-        width: 100%;
+
+    header {
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        margin: .5em 0;
     }
 }
+
+

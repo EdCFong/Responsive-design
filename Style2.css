@@ -1,32 +1,75 @@
-div
-{
-    border: 1px dached red;
-}
-#containerHeader
-{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#logo h2{
-    font-family: 'Lora';
-    color: #143774;
-    font-size: 3.375rem;
-}
-#logo h3{
-    font-family: 'Ubuntu';
-    font-weight: bold;
-    color: #1792D2;
-    font-size: 1rem;
-}
-
-a{
-    font-family: 'Ubuntu';
-    font-weight: bold;
+body {
+    font-size: 1.125rem;
     color: #707070;
-    font-size: 1rem;
-    
+    margin: 0;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span {
+    color: #b7832f;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+/* Layout */
+
+.container {
+    width: 95%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    margin: 1em 0;
+    justify-content: space-between; 
+}
+
+
+img {
+  width: 100%;
+}
+
+.col-bg {
+    background: #212614;
+    color:#ffff;
+    padding: 1em;
+}
+
+.col-1 {
+     width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+@media (max-width:600px)
+{
+    .columns
+    {
+          flex-direction: column;
+    }
+    .col-1,
+    .col-2,
+    .col-3 {
+        width: 100%;
+    }
 }
