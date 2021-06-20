@@ -10,6 +10,13 @@ img {
     display: block;
 }
 
+.image-full {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
 /* ====================
 Typography
 ======================*/
@@ -23,6 +30,10 @@ h1, h2,h3 {
 h1{   
     font-size: 2rem;   
     margin: 0;
+}
+
+h3 {
+    color: #1792d2;
 }
 
 a{
@@ -81,6 +92,9 @@ strong{
     font-weight: 700;
 }
 
+.widget-recent-post-title  {
+    color: #143774;
+}
 
 /* ====================
 Layout
